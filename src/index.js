@@ -1,12 +1,13 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
-});
+// Require Express and Sequelize
+const server = require('@/server');
+// const { sequelize, models } = require('@/sequelize');
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+
+
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
