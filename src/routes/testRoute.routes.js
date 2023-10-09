@@ -3,11 +3,10 @@ const router = Router();
 
 // Set up the routes
 router.get('/', (req,res)=>{
-  try{
-    res.status(200).json("Success");
-  }catch(e){
-    res.status(500).json("Error");
+  if(req.body.error){
+    return res.jsonError();
   }
+    res.jsonOk(["Good","Response"],"Success");
 });
 
 // Export the router
