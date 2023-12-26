@@ -11,5 +11,8 @@ const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
 const models = require('./models')(sequelize);
 
 // Associations
+models.Ingredient.associate(models);
+models.Recipe.associate(models);
+
 
 module.exports = { sequelize, models };

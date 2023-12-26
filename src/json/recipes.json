@@ -1,0 +1,90 @@
+[
+  {
+    "nombre": "Salsa marinara",
+    "ingredientes": [
+      "Tomates",
+      "Cebolla",
+      "Ajo",
+      "Albahaca",
+      "Orégano",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta"
+    ]
+  },
+  {
+    "nombre": "Arroz con curry de verduras",
+    "ingredientes": [
+      "Arroz",
+      "Curry en polvo",
+      "Pimientos",
+      "Espinacas",
+      "Cebolla",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta"
+    ]
+  },
+  {
+    "nombre": "Ensalada de garbanzos y pimientos",
+    "ingredientes": [
+      "Garbanzos",
+      "Pimientos",
+      "Cebolla",
+      "Aceite de oliva",
+      "Vinagre",
+      "Sal",
+      "Pimienta",
+      "Perejil"
+    ]
+  },
+  {
+    "nombre": "Tofu salteado con verduras",
+    "ingredientes": [
+      "Tofu",
+      "Cebolla",
+      "Pimientos",
+      "Ajo",
+      "Aceite de sésamo",
+      "Salsa de soja",
+      "Pimienta",
+      "Espinacas"
+    ]
+  },
+  {
+    "nombre": "Pasta con salsa de champiñones y ajo",
+    "ingredientes": [
+      "Pasta",
+      "Champiñones",
+      "Ajo",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Perejil"
+    ]
+  },
+  {
+    "nombre": "Galletas de vainilla y canela",
+    "ingredientes": [
+      "Harina",
+      "Azúcar",
+      "Mantequilla",
+      "Huevos",
+      "Extracto de vainilla",
+      "Canela"
+    ]
+  },
+  {
+    "nombre": "Tofu salteado con verduras",
+    "ingredientes": [
+      "Tofu",
+      "Cebolla",
+      "Pimientos",
+      "Ajo",
+      "Aceite de sésamo",
+      "Salsa de soja",
+      "Pimienta",
+      "Espinacas"
+    ]
+  }
+]

@@ -1,4 +1,5 @@
 module.exports = (sequelize) => {
-  //const Example = require('./Example')(sequelize);
-	return {  };
+  const Ingredient = require('./Ingredient')(sequelize);
+  const Recipe = require('./Recipe')(sequelize);
+	return { Ingredient, Recipe };
 };
