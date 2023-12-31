@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-
+const defaultIngredient = require('@/svg/defaultIngredient');
 module.exports = (sequelize) => {
 	const Ingredient = sequelize.define('ingredient', {
 		id: {
@@ -12,6 +12,13 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
+		svg: {
+			type: DataTypes.TEXT,
+			allowNull: true,
+			defaultValue: defaultIngredient,
+		},
+	},{
+		timestamps: false
 	});
 	Ingredient.associate = function (models) {
 		Ingredient.belongsToMany(models.Recipe, { through: 'recipe_ingredient' });

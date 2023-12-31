@@ -4,21 +4,23 @@ const { Router } = require('express');
 
 // Import of routes
 const testRoute = require('./testRoute.routes');
+const ingredientRoute = require('./ingredient.routes');
 
 // Express Router
 const router = Router();
 
 const routes = [
-  {path:'/',import: testRoute}
+  {path:'/',router: testRoute},
+  {path:'/ingredients',router: ingredientRoute}
 ];
 
 // Set up the routes
 routes.forEach((route) => {
   if(!route.middlewares){
-    router.use(route.path,route.import);
+    router.use(route.path,route.router);
   }else{
     // TODO add middleware logic
-    // server.use(route.path,route.import)
+    // router.use(route.path,route.router)
   }
 })
 
