@@ -16,6 +16,10 @@ module.exports = (sequelize) => {
 			type: DataTypes.TEXT,
 			allowNull: true,
 		},
+		steps: {
+			type: DataTypes.ARRAY(DataTypes.TEXT),
+			allowNull: true, //Change to false once live
+		}
 	});
 	Recipe.associate = function (models) {
 		Recipe.belongsToMany(models.Ingredient, { through: 'recipe_ingredient' });
